@@ -50,10 +50,10 @@ integer
 | Column      | Type       | Options                        |
 |-------------|------------|--------------------------------|
 | user        | references | null: false, foreign_key: true |
-| items       | references | null: false, foreign_key: true |
+| item        | references | null: false, foreign_key: true |
 
 ### Association
 
-* has_one :item
-* has_one :user
+* belongs_to :item
+* belongs_to :user
 * has_one :address
